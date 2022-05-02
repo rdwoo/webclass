@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style 속성과 style 태그</title>
+    <style>
+      @import url(./mystyle.css);
+      .name{
+          color : #39369C(255, 0, 255);
+          background-color: #5CD1E5;
+
+      }
+      #food{
+        font-size:  30px;   //글자 크기
+        font-weight: bold;  //글자 굵기
+        color: #E14894;     //글자 색상
+        text-align: center; //글자 배열
+      }
+      #ref_style{
+          font-size: 10;
+          font-weight: lighter;
+          text-align: right;
+          color :#8C8C8C;
+          background-color:#FFD8D8 ;
+      }
+    </style>
+</head>
+<body>
+    <h3>소연재</h3>
+    <hr>
+    <p>저는 체조 선수 <span class="name">소연재</span>입니다. <span>음악</span>을 들으면서 책읽기를 좋아합니다.</p>
+    <p> <span style="color: #ffff00;" id="food">김치찌개
+        <p id="ref_style">(여기서 글자가 노랑색인 이유는 속성으로 접근하는 방법이 우선순이기 때문이다.)</p>
+
+    </span>와 <span id="food">막국수</span>를 무척 좋아합니다.</p>
+</body>
+</html>
