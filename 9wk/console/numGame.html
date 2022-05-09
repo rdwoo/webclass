@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> //오류 찾아볼 것...
+    let number, answer;
+    number = Math.floor(Math.random() * 10); //랜덤 숫자 생성
+    while(number != answer)//처음부터 값이 다르다는 조건문... answer는 선언이 되지 않았는데..임의로 0을 출력? 
+    { //number과 answer 사이의 값이 다르면 아래를 실행
+           
+        answer = prompt("0~9의 숫자를 입력하세요."); //숫자입력하는 프롬트를 생성 
+            if (answer == null) break; //만약에서 answer가 비어 있으면 break문으로 멈춘다.
+                if (number == answer) { 
+                    alert("정답입니다."); 
+                }else { 
+                    //alert("틀렸습니다.");
+                    if (number < answer) { 
+                        alert("더 작은 수를 입력하세요");
+                    } else { 
+                        alert("더 큰 수를 입력하세요");
+                    }//lse {
+                }//else {
+
+    }//while(number != answer)
+        
+        
+    </script>
+</body>
+</html>
